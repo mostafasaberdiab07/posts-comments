@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"/>
+  </head>
+<body>
+  <!--Navbar-->
+  <div class="header" style="z-index:100000;">
+    <div class="inner_header">
+      <div class="logo-container">
+        <h1>SFS<span> Students</span></h1>
+      </div>
+      <ul class="nav">
+        <a href="index.php"><li><i class="fas fa-home" aria-hidden="true"></i></li></a>
+        <a href="explore.php"><li><i class="fas fa-compass" aria-hidden="true"></i></li></a>
+        <a href="profile.php?username=<?php echo $username; ?>"><li><i class="fa fa-user" aria-hidden="true"></i></li></a>
+      </ul>
+    </div>
+  </div>
+  <!--Posts-->
+  <div class="timelineposts">
+    <div class="wrapper">
+      <div class="post-wrapper">
+        <div class="username">
+          <a href="#"><i class="fa fa-user fa-2x"></i><h1>Mostafa Saber</h1></a>
+        </div>
+        <div class="post-img">
+          <img src="comp.jpg">
+        </div>
+        <div class="post-bottom" style="min-height:100%; overflow-x:hidden; overflow-y:auto;">
+          <h1 id="description">Test</h1>
+          <input type="text" class="" placeholder="Add a comment">
+          <a href="comments.html" id="comment"> View Comments</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="timelineposts">
+    <div class="wrapper">
+      <div class="post-wrapper">
+        <div class="username">
+          <a href="#"><i class="fa fa-user fa-2x"></i><h1>Mostafa Saber</h1></a>
+        </div>
+        <div class="post-bottom" style="min-height:100%; overflow-x:hidden; overflow-y:auto;">
+          <h1 id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+          <input type="text" class="" placeholder="Add a comment">
+          <a href="comments.html" id="comment"> View Comments</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!--Footer-->
+<footer>
+        <a href="index.php"><i class="fa fa-home home" aria-hidden="true"></i></a>
+        <a href="explore.php"><i class="fas fa-compass" aria-hidden="true"></i></a>
+        <a href="profile.php?username=<?php echo $username; ?>"><i class="fa fa-user" aria-hidden></i></a>
+     </footer>
+</html>
